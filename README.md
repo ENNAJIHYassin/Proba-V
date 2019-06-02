@@ -26,7 +26,7 @@ The architecture is slightly modified from the original paper (mainly for perfor
     For training: Good GPU, I trained this model using my trusty NVIDIA GTX 1080.
     It is advised to train this model using a better GPU with more VRAM.
 
-## Data set:
+## Dataset:
     to get the dataset, run this command on your shell:
     >> python getData.py
     
@@ -53,7 +53,7 @@ The architecture is slightly modified from the original paper (mainly for perfor
 ![sample 3](./sample_results/predict258_3_401.png)
     
 
-## Refrences:
+## References:
 
     Paper:
     Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network :
