@@ -42,11 +42,11 @@ The architecture is slightly modified from the original paper (mainly for perfor
     runs for 1000 epochs, with 2 batch size. (It is advised to run this model for more than that!!)
     
     
- ## Sample Results:
+## Sample Results:
 
-Left  : Low Resolution Image (input)
-Middle: Super Resolution Image (prediction)
-Right : High Resolution Image (ground truth)
+      Left  : Low Resolution Image (input)
+      Middle: Super Resolution Image (prediction)
+      Right : High Resolution Image (ground truth)
 
 ![sample 1](./sample_results/predict116_5_301.png)
 ![sample 2](./sample_results/predict256_4_201.png)
