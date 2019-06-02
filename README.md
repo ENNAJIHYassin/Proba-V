@@ -15,7 +15,7 @@ The architecture is slightly modified from the original paper (mainly for perfor
     
 ## Requirements:
 
-    You will need the following to run the above:
+    You will need the following:
     Python 3.6
     tensorflow 1.12.0
     keras 2.2.4
