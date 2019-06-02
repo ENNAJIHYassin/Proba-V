@@ -1,16 +1,17 @@
 # PROBA-V Super Resolution - Solved with SRGAN
 
 This repository contains my submission code to the challenge [Proba-V Super Resolution](https://kelvins.esa.int/proba-v-super-resolution/home/)
-The solution proposed here is a Super Ressolution Generative Adversarial Network, as described in this [paper](https://arxiv.org/pdf/1609.04802.pdf)
+
+The solution proposed here is a Super Resolution Generative Adversarial Network, as described in this [paper](https://arxiv.org/pdf/1609.04802.pdf)
 
 The architecture is slightly modified from the original paper (mainly for performance concerns)
 
 ## Changes from Original Paper:
     * 16 Residual blocks used, but only 1 upsampling block instead of 2.
-    * As per suggestion from [this article](http://distill.pub/2016/deconv-checkerboard/), we are using UpSampling2D as a
+    * As per suggestion from http://distill.pub/2016/deconv-checkerboard/, we are using UpSampling2D as a
       simple Nearest Neighbour Upsampling instead of SubPixelConvolution.
     * The number of discriminator filters were all divided by 2, to shrink amount of trainable parameters.
-    * Loss Function: a specefic loss function was defined and used as per the competition [scroing](https://kelvins.esa.int/proba-v-super-resolution/scoring/) rules.
+    * Loss Function: a specefic loss function was defined and used as per the competition scroing: https://kelvins.esa.int/proba-v-super-resolution/scoring/
     
 ## Requirements:
 
@@ -23,37 +24,37 @@ The architecture is slightly modified from the original paper (mainly for perfor
     matplotlib, scipy
     
     For training: Good GPU, I trained this model using my trusty NVIDIA GTX 1080.
-    I advise you to get a better GPU with more VRAM
+    It is advised to train this model using a better GPU with more VRAM.
 
 ## Data set:
-    to get the dataset, run thiss command on your shell:
-    python getData.py
+    to get the dataset, run this command on your shell:
+    >> python getData.py
     
     * This will also create an "output" directory to store results (images and .h5 files)
 
 ## How to use:
     
-    * clone or download this repository
-    * run the "getData.py" first
-    * run "train.py"
+    * clone or download this repository,
+    * run the "getData.py" first,
+    * then run "train.py" (after adjustments)
     
     Note : Please change the number of epochs and batch size accordingly from within the train.py file. by default, the model
     runs for 1000 epochs, with 2 batch size. (It is advised to run this model for more than that!!)
     
     
- ## Output:
+ ## Sample Results:
 
 Below are few results-
-#![Output 1](./output/gan_generated_image_epoch_1110.png)
-#![Output 2](./output/gan_generated_image_epoch_2580.png)
-#![Output 2](./output/gan_generated_image_epoch_770.png)
+![sample 1](./sample_results/predict116_5_301.png)
+![sample 2](./sample_results/predict256_4_201.png)
+![sample 3](./sample_results/predict258_3_401.png)
     
-More results are in output folder
 
 ## Refrences:
 
     Paper:
-    [Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network](https://arxiv.org/pdf/1609.04802.pdf)
+    Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network :
+    https://arxiv.org/pdf/1609.04802.pdf
     
     Useful github pages:
     https://github.com/lfsimoes/probav
