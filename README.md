@@ -1,10 +1,10 @@
 # PROBA-V Super Resolution - Solved with SRGAN
 
-This repository contains my submission code to the challenge [Proba-V Super Resolution](https://kelvins.esa.int/proba-v-super-resolution/home/)
+This repository contains my submission code to the challenge [Proba-V Super Resolution](https://kelvins.esa.int/proba-v-super-resolution/home/).
 
-The solution proposed here is a Super Resolution Generative Adversarial Network, as described in this [paper](https://arxiv.org/pdf/1609.04802.pdf)
+The solution proposed here is a Super Resolution Generative Adversarial Network, as described in this [paper](https://arxiv.org/pdf/1609.04802.pdf).
 
-The architecture is slightly modified from the original paper (mainly for performance concerns)
+The architecture is slightly modified from the original paper (mainly for performance concerns).
 
 ## Changes from Original Paper:
     * 16 Residual blocks used, but only 1 upsampling block instead of 2.
@@ -44,7 +44,10 @@ The architecture is slightly modified from the original paper (mainly for perfor
     
  ## Sample Results:
 
-Below are few results-
+Left  : Low Resolution Image (input)
+Middle: Super Resolution Image (prediction)
+Right : High Resolution Image (ground truth)
+
 ![sample 1](./sample_results/predict116_5_301.png)
 ![sample 2](./sample_results/predict256_4_201.png)
 ![sample 3](./sample_results/predict258_3_401.png)
