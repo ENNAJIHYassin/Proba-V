@@ -60,7 +60,7 @@ The architecture is slightly modified from the original paper (mainly for perfor
     https://arxiv.org/pdf/1609.04802.pdf
     
     Useful github pages:
-    https://github.com/lfsimoes/probav
+    https://github.com/lfsimoes/probav  (big thanks to luis for providing this repository)
     https://github.com/fchollet/deep-learning-with-python-notebooks/blob/master/8.5-introduction-to-gans.ipynb
     https://github.com/deepak112/Keras-SRGAN
     https://github.com/eriklindernoren/Keras-GAN/tree/master/srgan
