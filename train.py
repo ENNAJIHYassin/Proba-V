@@ -78,7 +78,7 @@ def plot_generated_images(epoch, generator, iteration, num_pass, examples=1 , di
 
     plt.tight_layout()
     if save:
-        fig.savefig("D:\Proba-v\output/predict{}_{}_{}.png".format(num_pass+1, epoch+1, iteration+1))
+        fig.savefig("output/predict{}_{}_{}.png".format(num_pass+1, epoch+1, iteration+1))
         plt.close(fig)
 
 
@@ -147,9 +147,9 @@ def train(epochs=20000, batch_size=10, sample_interval=200, num_pass=0):
                 plot_generated_images(epoch, generator, iteration, num_pass)
 
         # Save model after each epoch
-        generator.save('D:\Proba-v\output/gen_model{}_{}.h5'.format(num_pass+1, epoch+1))
-        discriminator.save('D:\Proba-v\output/dis_model{}_{}.h5'.format(num_pass+1,epoch+1))
-        srgan.save('D:\Proba-v\output/gan_model{}_{}.h5'.format(num_pass+1,epoch+1))
+        generator.save('output/gen_model{}_{}.h5'.format(num_pass+1, epoch+1))
+        discriminator.save('output/dis_model{}_{}.h5'.format(num_pass+1,epoch+1))
+        srgan.save('output/gan_model{}_{}.h5'.format(num_pass+1,epoch+1))
 
         print(
         f'discriminator loss = {np.mean(d_losses):.5f} '
