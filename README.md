@@ -23,7 +23,7 @@ The architecture is slightly modified from the original paper (mainly for perfor
     skimage 0.14.2  (very important to get this specific version)
     matplotlib, scipy
     
-    For training: Good GPU, I trained this model using my trusty NVIDIA GTX 1080.
+    For training: Relatively powerfull GPU, this model was trained on an NVIDIA GTX 1080.
     It is advised to train this model using a better GPU with more VRAM.
 
 ## Dataset:
