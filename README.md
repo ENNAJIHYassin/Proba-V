@@ -10,8 +10,8 @@ The architecture is slightly modified from the original paper (mainly for perfor
     * 16 Residual blocks used, but only 1 upsampling block instead of 2.
     * As per suggestion from http://distill.pub/2016/deconv-checkerboard/, we are using UpSampling2D as a
       simple Nearest Neighbour Upsampling instead of SubPixelConvolution.
-    * The number of discriminator filters were all divided by 2, to shrink amount of trainable parameters.
-    * Loss Function: a specefic loss function was defined and used as per the competition scroing: https://kelvins.esa.int/proba-v-super-resolution/scoring/
+    * The number of discriminator filters were all divided by 2, to shrink the amount of trainable parameters.
+    * Loss Function: a specefic loss function was defined and used as per the competition scoring: https://kelvins.esa.int/proba-v-super-resolution/scoring/
     
 ## Requirements:
 
